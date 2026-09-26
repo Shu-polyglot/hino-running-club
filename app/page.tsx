@@ -131,11 +131,17 @@ export default function Home() {
           <p className="eyebrow">LET&apos;S RUN TOGETHER</p>
           <h2>優雅な朝を<br />一緒に過ごしましょう！！</h2>
         </div>
-        <div className="join-card">
+        <a
+          className="join-card"
+          href="https://www.instagram.com/hinode_hashiro/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagramで日野ランニングクラブ @hinode_hashiro を開いてDMを送る"
+        >
           <span>HOW TO JOIN</span>
-          <p>参加の申込みはDMから</p>
-          <small>陸上未経験歓迎 ／ 一人参加OK ／ 完全無料</small>
-        </div>
+          <p>InstagramのDMで<br />参加を申し込む ↗</p>
+          <small>@hinode_hashiro　日野ランニングクラブ</small>
+        </a>
       </section>
 
       <footer>

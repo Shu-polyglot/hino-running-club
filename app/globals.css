@@ -82,7 +82,9 @@ h1 { font-size: clamp(76px, 9vw, 146px); line-height: .9; letter-spacing: -.09em
 
 .join { padding: 9vw 5vw; display: grid; grid-template-columns: 58% 42%; gap: 7vw; align-items: end; border-bottom: 1px solid var(--line); }
 .join .eyebrow { margin-bottom: 30px; }
-.join-card { background: var(--blue); color: white; padding: 42px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; }
+.join-card { background: var(--blue); color: white; padding: 42px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; transition: background .25s ease, transform .25s ease; }
+.join-card:hover, .join-card:focus-visible { background: #0d34cd; transform: translateY(-5px); }
+.join-card:focus-visible { outline: 3px solid var(--ink); outline-offset: 5px; }
 .join-card span, .join-card small { font-size: 10px; letter-spacing: .16em; }
 .join-card p { margin: 28px 0; font-size: clamp(28px, 3vw, 45px); font-weight: 800; line-height: 1.3; }
 
