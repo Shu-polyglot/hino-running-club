@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const facts = [
   ["DATE", "月の第2、第4土曜日"],
   ["TIME", "7:30〜（約1時間）"],
@@ -24,7 +26,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-photo">
           <Image
-            src="/images/running-main-clean.png"
+            src={`${basePath}/images/running-main-clean.png`}
             alt="大会のコースを走る日野ランニングクラブのメンバー"
             fill
             priority
@@ -60,7 +62,7 @@ export default function Home() {
           <h2>いつもの日常に<br />ちょっとした刺激を</h2>
           <div className="message-photo">
             <Image
-              src="/images/message-clean.png"
+              src={`${basePath}/images/message-clean.png`}
               alt="夜景を眺める日野ランニングクラブ代表"
               fill
               sizes="(max-width: 800px) 100vw, 48vw"
@@ -84,7 +86,7 @@ export default function Home() {
       <section className="information" id="information">
         <div className="info-photo">
           <Image
-            src="/images/bridge-clean.png"
+            src={`${basePath}/images/bridge-clean.png`}
             alt="集合場所のふれあい橋"
             fill
             sizes="100vw"
